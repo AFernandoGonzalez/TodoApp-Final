@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #e8ffff;
+     font-family: 'Noto Sans JP',
+     sans-serif;
+}
+
+
+.appTitle{
+    margin-top: 20px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appTitle h1 {
+    margin-bottom: 10px;
+    color: rgb(66, 66, 66);
+    font-family: 'Noto Sans JP',
+    sans-serif;
+    font-weight: 700;
+}
+
+/* Button */
+
+.form{
+    border: 2px solid #41aea9;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.form input {
+    font-size: 20px;
+    border-style: none;
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    border-width: 0px;
+    outline: none;
+}
+
+.btn{
+    background-color: #a6f6f1;
+    border-style: none;
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    border-width: 0px;
+    outline: none;
+    
+}
+
+.btn:hover {
+    background-color: #41aea9;
+    transition: ease-in-out .4s;
+}
+
+.btn p {
+    color: #213e3b;
+    font-size: 20px;
+    font-weight: 900;
+}
+.btn p:hover {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+
+/* Content */
+
+.grid-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+.grid {
+    margin-top: 30px;
+    border-radius: 30px;
+    /* border: 5px solid rgb(111, 41, 97); */
+    display: grid;
+    grid-template-columns: 80% auto;
+    justify-content: center;
+    width: 600px;
+    background-color: #41aea9;
+    padding: 20px;
+}
+
+.grid p{
+    color: white;
+    font-weight: 700;
+}
+
+.grid_item{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-gap: 5px;
+    padding: 2px;
+    align-items: center;
+}
+
+.grid_item a {
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    padding: 2px;
+    text-align: center;
+}
+
+.updateA {
+    color: #213e3b;
+    text-decoration: none;
+    border: solid 2px #213e3b;
+    font-size: 12px;
+
+}
+
+.deleteA {
+    color: #fa1e0e;
+    text-decoration: none;
+    border: solid 2px #213e3b;
+    font-size: 12px;
+}
+
+
+/* Update Page */
+
+.uPForm{
+    border: 2px solid #41aea9;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+.uPForm label{
+    color: #213e3b;
+    font-weight: 400;
+    
+}
+
+.uPForm input {
+    border-style: none;
+    border-radius: 20px;
+    text-align: center;
+    border-width: 0px;
+    outline: none;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.uPForm input#id_complate{
+    width: 40px;
+}
+
+.uPForm input[type="checkbox"i] {
+    border-radius: 5px;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    /* padding: initial;
+    border: initial; */
+}
+
+.uPForm p{
+    color: #213e3b;
+}
+
+.btnUpdate{
+   background-color: #a6f6f1;
+   border-style: none;
+   width: 100px;
+   height: 30px;
+   border-radius: 20px;
+   font-size: 20px;
+   border-width: 0px;
+   outline: none;
+   /* padding: 8px; */
+}
+
+.btnUpdate:hover {
+    background-color: #41aea9;
+    transition: ease-in-out .4s;
+}
+
+.btnUpdate p:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* Delete page */
+
+.danger{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.danger span{
+    color: red;
+    font-weight: 700;
+}
+
+.center {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.formBtn {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.btnCancel a{
+    background-color: #a6f6f1;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 20px;
+    border-width: 0px;
+    outline: none;
+    text-decoration: none;
+    padding: 8px;
+    color: #213e3b;
+
+}
+
+.btnCancel {
+    border-style: none;
+    border-radius: 20px;
+    border-width: 0px;
+    margin-top: 10px;
+
+}
+
+.btnCancel a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #41aea9;
+    transition: ease-in-out .4s;
+}
+
+
+
+
+.btnDel {
+    border-style: none;
+    border-radius: 20px;
+    border-width: 0px;
+    margin-top: 10px;
+    background-color: #a6f6f1;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 20px;
+    border-width: 0px;
+    outline: none;
+    text-decoration: none;
+    padding: 8px;
+    color: red;
+    cursor: pointer;
+}
+
+.btnDel:hover {
+    color: rgb(255, 255, 255);
+    background-color: #fa1e0e;
+    transition: ease-in-out .4s;
+}
+

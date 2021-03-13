@@ -1,0 +1,17 @@
+{% extends 'tasks/_base.html' %}
+
+
+{% block content %}
+<div class="appTitle">
+    <!-- title -->
+        <h1>Update Task</h1>
+        <!-- add task -->
+        <form class="uPForm" method="POST" action="">
+            {% csrf_token %}
+            {{ form }}
+            <!-- <input type="submit" name="Update Task"> -->
+              <button class="btnUpdate" type="submit" name="Create Task"><p>Update</p></button>
+        </form>
+</div>
+
+{% endblock %}

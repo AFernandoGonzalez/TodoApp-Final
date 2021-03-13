@@ -1,0 +1,46 @@
+{% extends 'tasks/_base.html' %}
+
+{% block content %}
+
+<div class="appTitle">
+    <!-- title -->
+        <h1>To Do List</h1>
+        <!-- add task -->
+        <form class="form" method="POST" action="/">
+            {% csrf_token %}
+            {{ form.title }}
+            <button class="btn" type="submit" name="Create Task"><p>+</p></button>
+        </form>
+</div>
+
+<div class="grid-container">
+
+    <div class="grid">
+    
+            {% for task in tasks %}
+        <!-- tasks -->
+    <div>
+            {% if task.complete == True %}
+                <strike><p>{{ task }}</p> </strike>
+            {% else %}
+                <p>{{ task }}</p>
+            {% endif %}
+    
+    </div>
+    <div class="grid_item">
+        <a class="updateA" href="{% url 'update_task' task.id %}">Update</a>
+        <a class="deleteA" href="{% url 'delete_task' task.id %}">Delete</a>
+    </div>
+    {% endfor %}
+</div>
+   
+
+</div>
+
+
+
+
+
+
+{% endblock %}
+
